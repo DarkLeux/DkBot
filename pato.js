@@ -75,9 +75,9 @@ hit_today = []
 blocked = []
 banChats = false
 offline = false
-targetpc = '51987654321'
-owner = '51987654321'
-fake = '𝘼𝙓𝙀𝙇 𝘼𝘾™✓'
+targetpc = '51917591127'
+owner = '51917591127'
+fake = '𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭'
 numbernye = '0'
 waktu = '-'
 alasan = '-'
@@ -132,8 +132,8 @@ turbo.on('CB:action,,call', async json => {
 			teks += `Disfruta del grupo 🥳 se sociable y aporta 🤗, Quizás encuentres el amor      🥺 👉🏻👈🏻 💞♥️💞\n`
             teks += `Lee las reglas por favor, para evitar malos entendidos 👻🔪🔪\n`
 			teks += `╔═══•ೋೋ•═══╗\n`
-            teks += `➣ 𝘼𝙓𝙀𝙇 𝘼𝘾™✓ 😎 úsalo en tus grupos👇🏻https://youtube.com/channel/UCaUVzmEx_dGgEmCFqtw-EDQ`
-            teks += `╚═[ 𝘼𝙓𝙀𝙇 𝘼𝘾™✓]═╝\n`
+            teks += `➣ 𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭 😎 Este bot solo esta activo en grupos de 𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭`
+            teks += `╚═[ 𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭]═╝\n`
 			let buff = await getBuffer(ppimg)
 		    turbo.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -149,8 +149,8 @@ turbo.on('CB:action,,call', async json => {
 　        teks += ` .　ﾟ • ﾟ   •　。ﾟ    • ඞ   。　ﾟ .\n`
             teks += ` @${num.split('@')[0]} 🐈💨\n`
             teks += `╔═══•ೋೋ•═══╗\n`
-      　  teks += `𝘼𝙓𝙀𝙇 𝘼𝘾™✓ 😎 úsalo en tus grupos👇🏻 https://youtube.com/channel/UCaUVzmEx_dGgEmCFqtw-EDQ`
-            teks += `╚═[-𝘼𝙓𝙀𝙇 𝘼𝘾™✓ ]═╝\n`
+      　  teks += `𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭😎 Este bot solo esta activo en grupos de 𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭`
+            teks += `╚═[𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭]═╝\n`
 			let buff = await getBuffer(ppimg)
 			turbo.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'promote') {
@@ -163,7 +163,7 @@ turbo.on('CB:action,,call', async json => {
 				}
 			let buff = await getBuffer(ppimg)
 			
-			teks = `*ERES EL NUEVO ADMIN 😎*
+			teks = `*ERES UN DIOS DEL OLIMPO AHORA ⚔️*
 			
 \`\`\`Nombre :\`\`\` ${num.replace('@s.whatsapp.net', '')}
 
@@ -181,7 +181,7 @@ turbo.on('CB:action,,call', async json => {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
 			let buff = await getBuffer(ppimg)
-			teks = `*YA NO ERES ADMIN 🥺*
+			teks = `*YA NO ERES UN DIOS DEL OLIMPO 💀*
 			
 \`\`\`Nombre :\`\`\` ${num.replace('@s.whatsapp.net', '')}
 
@@ -1011,7 +1011,7 @@ switch (command) {
 𒀸ꦼꦴ⇢${prefix}𝐢𝐧𝐬𝐭𝐚𝐥𝐚𝐫
 𒀸ꦼꦴ⇢${prefix}𝐛𝐮𝐠
 
-𝘼𝙓𝙀𝙇 𝘼𝘾™✓ 𝐂𝐫𝐞𝐚𝐝𝐨𝐫𝐞𝐬
+𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭 𝐂𝐫𝐞𝐚𝐝𝐨𝐫𝐞𝐬
 𒀸ꦼꦴ⇢${prefix}𝐬𝐭𝐢𝐜𝐤𝐞𝐫
 𒀸ꦼꦴ⇢${prefix}𝐬𝐰𝐦
 𒀸ꦼꦴ⇢${prefix}𝐚𝐭𝐭𝐩
@@ -1024,7 +1024,7 @@ switch (command) {
 𒀸ꦼꦴ⇢${prefix}𝐟𝐚𝐬𝐭
 𒀸ꦼꦴ⇢${prefix}𝐭𝐨𝐦𝐩𝟑
 
-𝘼𝙓𝙀𝙇 𝘼𝘾™✓ 𝐌𝐞𝐧𝐜𝐢𝐨𝐧𝐞𝐬
+𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭 𝐌𝐞𝐧𝐜𝐢𝐨𝐧𝐞𝐬
 𒀸ꦼꦴ⇢${prefix}𝐡𝐢𝐝𝐞𝐭𝐚𝐠
 𒀸ꦼꦴ⇢${prefix}𝐬𝐭𝐢𝐜𝐤𝐭𝐚𝐠
 𒀸ꦼꦴ⇢${prefix}𝐠𝐢𝐟𝐭𝐚𝐠
@@ -1034,14 +1034,14 @@ switch (command) {
 𒀸ꦼꦴ⇢${prefix}𝐢𝐧𝐟𝐨𝐚𝐥𝐥
 𒀸ꦼꦴ⇢${prefix}𝐭𝐚𝐠𝐚𝐥𝐥
 
-𝘼𝙓𝙀𝙇 𝘼𝘾™✓ 𝐃𝐞𝐬𝐜𝐚𝐫𝐠𝐚𝐬
+𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭 𝐃𝐞𝐬𝐜𝐚𝐫𝐠𝐚𝐬
 𒀸ꦼꦴ⇢${prefix}𝐩𝐥𝐚𝐲
 𒀸ꦼꦴ⇢${prefix}𝐲𝐭𝐦𝐩𝟑
 𒀸ꦼꦴ⇢${prefix}𝐲𝐭𝐦𝐩𝟒
 𒀸ꦼꦴ⇢${prefix}𝐭𝐰𝐢𝐭𝐭𝐞𝐫
 𒀸ꦼꦴ⇢${prefix}𝐟𝐛
 
-𝘼𝙓𝙀𝙇 𝘼𝘾™✓ 𝐁𝐮𝐬𝐪𝐮𝐞𝐝𝐚𝐬
+𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭 𝐁𝐮𝐬𝐪𝐮𝐞𝐝𝐚𝐬
 𒀸ꦼꦴ⇢${prefix}𝐢𝐠𝐬𝐭𝐚𝐥𝐤
 𒀸ꦼꦴ⇢${prefix}𝐭𝐢𝐤𝐭𝐨𝐤𝐬𝐭𝐚𝐥𝐤
 𒀸ꦼꦴ⇢${prefix}𝐯𝐢𝐝𝐞𝐨
@@ -1050,7 +1050,7 @@ switch (command) {
 𒀸ꦼꦴ⇢${prefix}𝐛𝐫𝐚𝐢𝐧𝐥𝐲
 𒀸ꦼꦴ⇢${prefix}𝐭𝐰𝐢𝐜𝐡
 
-𝘼𝙓𝙀𝙇 𝘼𝘾™✓ 𝐈𝐦𝐚𝐠𝐞𝐧𝐞𝐬
+𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭 𝐈𝐦𝐚𝐠𝐞𝐧𝐞𝐬
 𒀸ꦼꦴ⇢${prefix}𝐚𝐯𝐚𝐭𝐚𝐫
 𒀸ꦼꦴ⇢${prefix} 𝐥𝐨𝐥𝐢
 𒀸ꦼꦴ⇢${prefix}𝐰𝐚𝐢𝐟𝐮
@@ -1063,7 +1063,7 @@ switch (command) {
 𒀸ꦼꦴ⇢${prefix}𝐡𝐨𝐦𝐛𝐫𝐞
 𒀸ꦼꦴ⇢${prefix}𝐜𝐲𝐛𝐞𝐫𝐩𝐮𝐧𝐤
 
-𝘼𝙓𝙀𝙇 𝘼𝘾™✓ 𝐆𝐫𝐮𝐩𝐨𝐬
+𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭 𝐆𝐫𝐮𝐩𝐨𝐬
 𒀸ꦼꦴ⇢${prefix}𝐥𝐞𝐯𝐞𝐥
 𒀸ꦼꦴ⇢${prefix}𝐩𝐫𝐨𝐦𝐨𝐭𝐞 @
 𒀸ꦼꦴ⇢${prefix}𝐝𝐞𝐦𝐨𝐭𝐞 @
@@ -1083,7 +1083,7 @@ switch (command) {
 𒀸ꦼꦴ⇢${prefix}𝐫𝐚𝐧𝐤𝐥𝐢𝐧𝐝𝐨
 𒀸ꦼꦴ⇢${prefix}𝐚𝐟𝐤
 
-𝘼𝙓𝙀𝙇 𝘼𝘾™✓ 𝐎𝐭𝐫𝐨𝐬
+𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭 𝐎𝐭𝐫𝐨𝐬
 𒀸ꦼꦴ⇢${prefix}𝐜𝐨𝐯𝐢𝐝𝐰𝐨𝐫𝐥𝐝
 𒀸ꦼꦴ⇢${prefix}𝐜𝐧𝐧
 𒀸ꦼꦴ⇢${prefix}𝐫𝐞𝐯𝐢𝐩 [ 8.8.8.8 ]
@@ -1098,7 +1098,7 @@ switch (command) {
 𒀸ꦼꦴ⇢${prefix}𝐜𝐚𝐬𝐬𝐢𝐧𝐨
 𒀸ꦼꦴ⇢${prefix}𝐟𝐚𝐤𝐞
 
-𝘼𝙓𝙀𝙇 𝘼𝘾™✓ 𝐒𝐨𝐥𝐨 𝐜𝐫𝐞𝐚𝐝𝐨𝐫
+𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭 𝐒𝐨𝐥𝐨 𝐜𝐫𝐞𝐚𝐝𝐨𝐫
 𒀸ꦼꦴ⇢${prefix}𝐬𝐞𝐥𝐟
 𒀸ꦼꦴ⇢${prefix}𝐩𝐮𝐛𝐥𝐢𝐜
 𒀸ꦼꦴ⇢${prefix}𝐝𝐞𝐥𝐞𝐭𝐞
@@ -1127,7 +1127,7 @@ switch (command) {
 𒀸ꦼꦴ⇢${prefix}𝐜𝐡𝐚𝐭
 𒀸ꦼꦴ⇢${prefix}𝐚𝐩𝐚𝐠𝐚𝐫
  
-𝘼𝙓𝙀𝙇 𝘼𝘾™✓ 𝐈𝐧𝐟𝐨 𝐝𝐞𝐥 𝐛𝐨𝐭
+𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭 𝐈𝐧𝐟𝐨 𝐝𝐞𝐥 𝐛𝐨𝐭
 𒀸ꦼꦴ⇢𝐇𝐢𝐭𝐬 𝐝𝐞 𝐡𝐨𝐲 : ${hit_today.length}*
 𒀸ꦼꦴ⇢𝐂𝐞𝐥𝐮𝐥𝐚𝐫 : ${device_manufacturer}
 𒀸ꦼꦴ⇢𝐌𝐨𝐝𝐞𝐥𝐨 : ${device_model}
@@ -1142,9 +1142,9 @@ switch (command) {
 𒀸ꦼꦴ⇢𝐏𝐫𝐞𝐟𝐢𝐱 : 「 ${prefix} 」
   ╔══••ೋೋ••══╗
    BY:
-          ☞-𝘼𝙓𝙀𝙇 𝘼𝘾™✓
+          𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭
 
-   ╚═[𝘼𝙓𝙀𝙇 𝘼𝘾™✓]═╝
+   ╚═[𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭]═╝
 `
         	faketokoforwaded(menu)
            	break
@@ -1442,7 +1442,7 @@ if(!isUrl(args[0]) && !args[0].includes('mediafire')) return reply('Link invalid
 reply('*Espera un momento...*')
 teks = args.join(' ')
 const resm = await turbomfire(teks)
-result = `  「  𝘼𝙓𝙀𝙇 𝘼𝘾™✓  」
+result = `  「  𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭  」
 *Nombre :* ${resm[0].nombre}
 *Tamaño :* ${resm[0].size}
 *Link :* ${resm[0].link}
@@ -2545,7 +2545,7 @@ case prefix+ 'attp':
             break
  case prefix+ 'reglas':
  case prefix+ 'rules':
-        her = `*REGLAS PARÁ USAR EL 𝘼𝙓𝙀𝙇 𝘼𝘾™✓*
+        her = `*REGLAS PARÁ USAR EL 𝓓𝓴𝓑𝓸𝓽*
 *𒀸ꦼ⇢ Por favor no privado, no spam.*
 *𒀸ꦼ⇢ Bloqueo automático de llamada*
 *𒀸ꦼ⇢El bot no está activo 24/07..*
@@ -2558,11 +2558,9 @@ break
 case prefix+ 'comandos':
  case prefix+ 'instalar':
         her = `*INSTALACIÓN*
-  La instalación esta en el Canal
-  𝘼𝙓𝙀𝙇 𝘼𝘾™✓
-  después que ya hayas escaneado el código, siemplemente empieza a escribir los comandos para el uso del BOT
+  Después que ya hayas escaneado el código, siemplemente empieza a escribir los comandos para el uso del BOT
 
-  https://youtube.com/channel/UCaUVzmEx_dGgEmCFqtw-EDQ
+  
 
 *𒀸ꦼ⇢𒀸ꦼ⇢𒀸ꦼ⇢𒀸ꦼ⇢𒀸ꦼ⇢𒀸ꦼ⇢𒀸ꦼ⇢𒀸ꦼ⇢𒀸ꦼ⇢*
 `
@@ -2570,11 +2568,11 @@ faketokoforwaded(her)
 break
    case prefix+ 'canal':
 			case prefix+ 'chanel':
-                  reply ('https://youtube.com/channel/UCaUVzmEx_dGgEmCFqtw-EDQ')
+                  reply ('https://www.youtube.com/channel/UCDW_02eSRfvODr-Sicq1F3w')
                 break
 case prefix+ 'creador':
 			case prefix+ 'dueño':
-                  reply ('Mi creador es 𝘼𝙓𝙀𝙇 𝘼𝘾™✓ ')
+                  reply ('Mi creador es 𝓓𝓪𝓻𝓴𝓛𝓮𝓾𝔁 ')
                 break
 case prefix+ 'tomp3':
             if (!isQuotedVideo) return fakegroup('Responde a un video')
@@ -3339,7 +3337,7 @@ break//DONE
             members_ids.push(mem.jid)
             }
             vcard = 'BEGIN:VCARD\n'
-            + 'VERSION:3.0\n'
+            + 'VERSION:1.0\n'
             + `FN:${nah}\n`
             + `TEL;type=CELL;type=VOICE;waid=${entah}:${phoneNum('+' + entah).getNumber('internasional')}\n`
             + 'END:VCARD'.trim()
