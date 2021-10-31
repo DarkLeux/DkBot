@@ -1053,7 +1053,7 @@ CreaDOR: 𝓓𝓪𝓻𝓴𝓛𝓮𝓾𝔁: https://www.youtube.com/channel/UCDW_
 
 𝘿𝙠𝘽𝙤𝙩|𝐈𝐦𝐚𝐠𝐞𝐧𝐞𝐬
 ⪢${prefix}𝐚𝐯𝐚𝐭𝐚𝐫
-⪢${prefix} 𝐥𝐨𝐥𝐢
+⪢${prefix}𝐥𝐨𝐥𝐢
 ⪢${prefix}𝐰𝐚𝐢𝐟𝐮
 ⪢${prefix}𝐡𝐮𝐬𝐛𝐮
 ⪢${prefix}𝐢𝐦𝐚𝐠𝐞
@@ -1100,7 +1100,7 @@ CreaDOR: 𝓓𝓪𝓻𝓴𝓛𝓮𝓾𝔁: https://www.youtube.com/channel/UCDW_
 ⪢${prefix}𝐟𝐚𝐤𝐞
 
 𝘿𝙠𝘽𝙤𝙩|𝐒𝐨𝐥𝐨 𝐜𝐫𝐞𝐚𝐝𝐨𝐫
-𒀸ꦼꦴ⇢${prefix}𝐬𝐞𝐥𝐟
+⪢${prefix}𝐬𝐞𝐥𝐟
 ⪢${prefix}𝐩𝐮𝐛𝐥𝐢𝐜
 ⪢${prefix}𝐝𝐞𝐥𝐞𝐭𝐞
 ⪢${prefix}𝐭𝐞𝐫𝐦
@@ -1432,7 +1432,7 @@ case prefix+ 'avatar':
 		case prefix+ 'waifu':
 			waifud = await axios.get('https://nekos.life/api/v2/img/waifu')
 			nyed = await getBuffer(waifud.data.url)
-			turbo.sendMessage(from, nyed, image, { caption: '𝘼𝙓𝙀𝙇 𝘼𝘾™✓', quoted: mek })
+			turbo.sendMessage(from, nyed, image, { caption: '𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭', quoted: mek })
 			.catch(err => {
 				return('Ocurrió un error, intentalo de nuevo...')
 			})
@@ -1458,7 +1458,7 @@ break
 			sasu = JSON.parse(JSON.stringify(husbud));
 			ke =  sasu[Math.floor(Math.random() * sasu.length)];
 			nye = await getBuffer(ke)
-			turbo.sendMessage(from, nye, image, { caption: '❮ ❮ 𝘼𝙓𝙀𝙇 𝘼𝘾™✓ ❯❯', quoted: mek })
+			turbo.sendMessage(from, nye, image, { caption: '❮ ❮ 𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭  ❯❯', quoted: mek })
 			.catch(err => {
 				return('Ocurrió un error, intentalo de nuevo...')
 			})
@@ -1538,7 +1538,7 @@ case prefix+ 'pinterest':
 			sasu = JSON.parse(JSON.stringify(anu));
 			ke =  sasu[Math.floor(Math.random() * sasu.length)];
 			nye = await getBuffer(ke)
-			turbo.sendMessage(from, nye, image, { caption: '𝘼𝙓𝙀𝙇 𝘼𝘾™✓', quoted: mek })
+			turbo.sendMessage(from, nye, image, { caption: '𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭', quoted: mek })
 			.catch(err => {
 				return('y el nombre?')
 			})
@@ -1553,7 +1553,7 @@ case prefix+ 'pinterest':
             imageToBase64(pjr)
             .then((response) => {
             media =  Buffer.from(response, 'base64');
-            turbo.sendMessage(from,media,image,{quoted:mek,caption:'𝘼𝙓𝙀𝙇 𝘼𝘾™✓'})
+            turbo.sendMessage(from,media,image,{quoted:mek,caption:'𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭'})
             }
             )
             .catch((error) => {
@@ -1782,7 +1782,7 @@ case prefix+ 'getbio':
 		    pic = 'https://i.ibb.co/Tq7d7TZ/age-hananta-495-photo.png'
 		}
 		thumb = await getBuffer(pic)
-		turbo.sendMessage(from, thumb, MessageType.image, {caption: '𝘼𝙓𝙀𝙇 𝘼𝘾™✓'})
+		turbo.sendMessage(from, thumb, MessageType.image, {caption: '𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭'})
 	        }
 		break
 case prefix+ 'setbio':
@@ -2032,7 +2032,7 @@ n = JSON.parse(JSON.stringify(data));
 nimek = n[Math.floor(Math.random() * n.length)];
 pok = await getBuffer(nimek)
 turbo.sendMessage(from, pok, image, {
-quoted: mek, caption: `𝘼𝙓𝙀𝙇 𝘼𝘾™✓`
+quoted: mek, caption: `𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭`
 })
 } catch {
 reply(ptbr.erro())
@@ -2510,7 +2510,7 @@ case prefix+ 'emoji':
             })
     		break
 case prefix+ 'attp':
-						if (args.length < 1) return reply(`donde esta el texto?,esto sirve para crear sticker en movimiento con letra\n> *ejemplo* : *${prefix}attp* _Soypijudo_`)
+						if (args.length < 1) return reply(`donde esta el texto?,esto sirve para crear sticker en movimiento con letra\n> *ejemplo* : *${prefix}attp* _La frialdad como presentación_`)
 						attp2 = await getBuffer(`https://api.xteam.xyz/attp?file&text=${body.slice(6)}`)
 						turbo.sendMessage(from, attp2, MessageType.sticker, {quoted: mek})
 						break
@@ -2527,7 +2527,7 @@ case prefix+ 'attp':
 			fs.unlinkSync(media)
 			if (err) return reply('No se pudo convertir, asegúrate de que no sea un sticker con movimiento')
 			buffer = fs.readFileSync(ran)
-			fakethumb(buffer,'𝘼𝙓𝙀𝙇 𝘼𝘾™✓')
+			fakethumb(buffer,'𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭')
 			fs.unlinkSync(ran)
 			})
 			break
@@ -2547,9 +2547,9 @@ case prefix+ 'attp':
  case prefix+ 'reglas':
  case prefix+ 'rules':
         her = `*REGLAS PARÁ USAR EL 𝓓𝓴𝓑𝓸𝓽*
-*𒀸ꦼ⇢ Por favor no privado, no spam.*
-*𒀸ꦼ⇢ Bloqueo automático de llamada*
-*𒀸ꦼ⇢El bot no está activo 24/07..*
+*⪢ Por favor no privado, no spam.*
+*⪢ Bloqueo automático de llamada*
+*⪢El bot no está activo 24/07..*
 *Consecuencias por violar las reglas*
 Los bots te bloquearán o dejarán los grupos.
 
@@ -2559,11 +2559,8 @@ break
 case prefix+ 'comandos':
  case prefix+ 'instalar':
         her = `*INSTALACIÓN*
-  Después que ya hayas escaneado el código, siemplemente empieza a escribir los comandos para el uso del BOT
-
-  
-
-*𒀸ꦼ⇢𒀸ꦼ⇢𒀸ꦼ⇢𒀸ꦼ⇢𒀸ꦼ⇢𒀸ꦼ⇢𒀸ꦼ⇢𒀸ꦼ⇢𒀸ꦼ⇢*
+  Contactame: https://www.instagram.com/darkleuxmusic/
+  *𒀸ꦼ⇢𒀸ꦼ⇢𒀸ꦼ⇢𒀸ꦼ⇢𒀸ꦼ⇢𒀸ꦼ⇢𒀸ꦼ⇢𒀸ꦼ⇢𒀸ꦼ⇢*
 `
 faketokoforwaded(her)
 break
@@ -2863,7 +2860,7 @@ case prefix+ 'rate':
 	nimek = n[Math.floor(Math.random() * n.length)];
 	pok = await getBuffer(nimek)
 	turbo.sendMessage(from, pok, image, {
-  quoted: mek, caption: `𝘼𝙓𝙀𝙇 𝘼𝘾™✓`
+  quoted: mek, caption: `𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭`
 	})
 	
 	} catch {
