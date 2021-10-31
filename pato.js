@@ -1,4 +1,5 @@
 // das créditos puta
+//Bot creado a base de AxelAC Canal: https://www.youtube.com/channel/UCaUVzmEx_dGgEmCFqtw-EDQ
 
 //npm
 const qrcode = require("qrcode-terminal")
@@ -88,7 +89,7 @@ async function starts() {
 	const turbo = new WAConnection()
         turbo.logger.level = 'warn'
         turbo.version = [2, 2119, 6]
-	console.log('>', '[',color('INFO','blue'),']','Gracias por usar AXEL AC BOT...')
+	console.log('>', '[',color('INFO','blue'),']','Gracias por usar DKBOT...')
 	turbo.on('qr', () => {
 	console.log(color('[','white'), color('!','red'), color(']','white'), color(' Escanea el código qr'))
 	})
@@ -98,7 +99,7 @@ async function starts() {
 	console.log(color('> [ INFO ]', 'white'), color('Conectando...'))
 	})
 	turbo.on('open', () => {
-	console.log(color('> [ INFO ]', 'white'), color('Conectado'))
+	console.log(color('> [ INFO ]', 'red'), color('Conectado'))
 	})
 		await turbo.connect({timeoutMs: 30*1000})
   fs.writeFileSync('./session.json', JSON.stringify(turbo.base64EncodedAuthInfo(), null, '\t'))
@@ -125,12 +126,12 @@ turbo.on('CB:action,,call', async json => {
 		    }
 			teks =  ` ╭─────••◈••────╮\n`
 			teks += `║➣ @${num.split('@')[0]}\n`
-			teks += `║➣ BIENVENID@\n`
+			teks += `║➣ BIENVENIDO\n`
 			teks += `║➣ ${mdata.subject}\n`			
 			teks += `╰─────••◈••────╯\n`
-		    teks += `Hola 👋🏻 Espero que se sienta como en casa       🍿🍭🍫🍬🍡🍧\n`
-			teks += `Disfruta del grupo 🥳 se sociable y aporta 🤗, Quizás encuentres el amor      🥺 👉🏻👈🏻 💞♥️💞\n`
-            teks += `Lee las reglas por favor, para evitar malos entendidos 👻🔪🔪\n`
+		    teks += `Hola 🎮 Espero que se la pase bien en este grupo      👾\n`
+			teks += `Disfruta denuestro 🎮 se sociable y aporta 🎮, Quizás encuentres el amor      🥺 👉🏻👈🏻 💞♥️💞\n`
+            teks += `Por favor lee nuestras reglas, para evitar malos entendidos 💀\n`
 			teks += `╔═══•ೋೋ•═══╗\n`
             teks += `➣ 𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭 😎 Este bot solo esta activo en grupos de 𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭`
             teks += `╚═[ 𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭]═╝\n`
@@ -143,9 +144,9 @@ turbo.on('CB:action,,call', async json => {
 			} catch {
 			ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 			}
-			teks = `Adiós 🙋🏻‍♂️ estaremos mejor sin ti 😹\n`
+			teks = `Adiós,uno mas o uno menos que mas da 💀\n`
 			teks += `. 。  • 　。•。ඞ •  •　ﾟ。　。\n`
-       　 teks += `No vuelvas por favor 😹\n`
+       　 teks += `No se te ocurra regresar 💀\n`
 　        teks += ` .　ﾟ • ﾟ   •　。ﾟ    • ඞ   。　ﾟ .\n`
             teks += ` @${num.split('@')[0]} 🐈💨\n`
             teks += `╔═══•ೋೋ•═══╗\n`
@@ -247,7 +248,7 @@ turbo.on('chat-update', async (mek) => {
         
 		mess = {
 			wait: '🛠️𝒆𝒔𝒑𝒆𝒓𝒂, 𝒆𝒏 𝒑𝒓𝒐𝒄𝒆𝒔𝒐 𝒅𝒆 𝒄𝒓𝒆𝒂𝒄𝒊𝒐𝒏, 90%',
-			success: 'Comando con  éxito 😏',
+			success: 'Comando con  éxito 👾',
 			wrongFormat: '📝𝒆𝒔𝒄𝒓𝒊𝒃𝒆 𝒃𝒊𝒆𝒏 𝒆𝒍 𝒇𝒐𝒓𝒎𝒂𝒕𝒐',
 			error: {
 				stick: 'lo siento 🚮 no se pudo convertir a sticker',
@@ -903,19 +904,19 @@ const levelup = (pushname, sender, getLevelingXp,  getLevel, getLevelingLevel, r
 //=====================//      
          // Ucapan Waktu
         const hour_now = moment().format('HH')
-        var ucapanWaktu = 'Pagi Kawan👋'
+        var ucapanWaktu = 'Buenos dias👋'
         if (hour_now >= '03' && hour_now <= '10') {
-          ucapanWaktu = 'Pagi Kawan👋'
+          ucapanWaktu = 'Buenos dias👋'
         } else if (hour_now >= '10' && hour_now <= '14') {
-          ucapanWaktu = 'Siang Kawan👋'
+          ucapanWaktu = 'Buenos dias y tardes👋'
         } else if (hour_now >= '14' && hour_now <= '17') {
-          ucapanWaktu = 'Soree Kawan👋'
+          ucapanWaktu = 'Buenas tardes👋'
         } else if (hour_now >= '17' && hour_now <= '18') {
-          ucapanWaktu = 'Selamat petang👋'
+          ucapanWaktu = 'Buenas noches👋'
         } else if (hour_now >= '18' && hour_now <= '23') {
-          ucapanWaktu = 'Malam Kawan🌚'
+          ucapanWaktu = 'Noche de panas🌚'
         } else {
-          ucapanWaktu = 'Selamat Malam🌚'
+          ucapanWaktu = 'Buenas noches, descansen🌚'
         }
 //========================================================================================================================//
 		colors = ['blue']
@@ -934,7 +935,7 @@ const levelup = (pushname, sender, getLevelingXp,  getLevel, getLevelingLevel, r
 if (budy.includes("https://")){
 if (!isGroup) return
 if (!isAntiLink) return
-if (isGroupAdmins) return('🧐')
+if (isGroupAdmins) return('💀')
 turbo.updatePresence(from, Presence.composing)
 var kic = `${sender.split("@")[0]}@s.whatsapp.net`
 reply(`Los link no son permitidos${sender.split("@")[0]}`)
@@ -949,7 +950,7 @@ reply("adios")
 if (budy.includes("http://")){
 if (!isGroup) return
 if (!isAntiLink) return
-if (isGroupAdmins) return('🧐')
+if (isGroupAdmins) return('💀')
 turbo.updatePresence(from, Presence.composing)
 var kic = `${sender.split("@")[0]}@s.whatsapp.net`
 reply(`Los link no son permitidos ${sender.split("@")[0]}`)
@@ -964,7 +965,7 @@ reply("adios")
 if (budy.includes(".com")){
 if (!isGroup) return
 if (!isAntiLink) return
-if (isGroupAdmins) return('🧐')
+if (isGroupAdmins) return('💀')
 turbo.updatePresence(from, Presence.composing)
 var kic = `${sender.split("@")[0]}@s.whatsapp.net`
 reply(`Los link no son permitidos${sender.split("@")[0]}`)
@@ -1001,150 +1002,150 @@ switch (command) {
 
 ℎ𝑜𝑙𝑎  ${pushname} 𝐵𝑖𝑒𝑛𝑣𝑒𝑛𝑖𝑑𝑜 𝑎𝑙 𝑚𝑒𝑛𝑢 "𝑤𝑒𝑙𝑐𝑜𝑚𝑒 𝑚𝑒𝑛𝑢"
 ════════ ✥.❖.✥ ════════
-𝘼𝙓𝙀𝙇 𝘼𝘾™✓: https://youtube.com/channel/UCaUVzmEx_dGgEmCFqtw-EDQ
+CreaDOR: 𝓓𝓪𝓻𝓴𝓛𝓮𝓾𝔁: https://www.youtube.com/channel/UCDW_02eSRfvODr-Sicq1F3w
 ════════ ✥.❖.✥ ════════
 
 𝐁𝐎𝐓 𝑖𝑛𝑓
-𒀸ꦼꦴ⇢${prefix}𝐜𝐚𝐧𝐚𝐥
-𒀸ꦼꦴ⇢${prefix}𝐜𝐫𝐞𝐚𝐝𝐨𝐫
-𒀸ꦼꦴ⇢${prefix}𝐫𝐞𝐠𝐥𝐚𝐬
-𒀸ꦼꦴ⇢${prefix}𝐢𝐧𝐬𝐭𝐚𝐥𝐚𝐫
-𒀸ꦼꦴ⇢${prefix}𝐛𝐮𝐠
+⪢${prefix}𝐜𝐚𝐧𝐚𝐥
+⪢${prefix}𝐜𝐫𝐞𝐚𝐝𝐨𝐫
+⪢${prefix}𝐫𝐞𝐠𝐥𝐚𝐬
+⪢${prefix}𝐢𝐧𝐬𝐭𝐚𝐥𝐚𝐫
+⪢${prefix}𝐛𝐮𝐠
 
-𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭 𝐂𝐫𝐞𝐚𝐝𝐨𝐫𝐞𝐬
-𒀸ꦼꦴ⇢${prefix}𝐬𝐭𝐢𝐜𝐤𝐞𝐫
-𒀸ꦼꦴ⇢${prefix}𝐬𝐰𝐦
-𒀸ꦼꦴ⇢${prefix}𝐚𝐭𝐭𝐩
-𒀸ꦼꦴ⇢${prefix}𝐞𝐦𝐨𝐣𝐢  
-𒀸ꦼꦴ⇢${prefix}𝐭𝐨𝐯𝐢𝐝
-𒀸ꦼꦴ⇢${prefix}𝐭𝐨𝐢𝐦𝐠
-𒀸ꦼꦴ⇢${prefix}𝐫𝐞𝐯𝐞𝐫𝐬𝐞
-𒀸ꦼꦴ⇢${prefix}𝐭𝐨𝐮𝐫𝐥
-𒀸ꦼꦴ⇢${prefix}𝐬𝐥𝐨𝐰 
-𒀸ꦼꦴ⇢${prefix}𝐟𝐚𝐬𝐭
-𒀸ꦼꦴ⇢${prefix}𝐭𝐨𝐦𝐩𝟑
+𝘿𝙠𝘽𝙤𝙩|𝐂𝐫𝐞𝐚𝐝𝐨𝐫𝐞𝐬
+⪢${prefix}𝐬𝐭𝐢𝐜𝐤𝐞𝐫
+⪢${prefix}𝐬𝐰𝐦
+⪢${prefix}𝐚𝐭𝐭𝐩
+⪢${prefix}𝐞𝐦𝐨𝐣𝐢  
+⪢${prefix}𝐭𝐨𝐯𝐢𝐝
+⪢${prefix}𝐭𝐨𝐢𝐦𝐠
+⪢${prefix}𝐫𝐞𝐯𝐞𝐫𝐬𝐞
+⪢${prefix}𝐭𝐨𝐮𝐫𝐥
+⪢${prefix}𝐬𝐥𝐨𝐰 
+⪢${prefix}𝐟𝐚𝐬𝐭
+⪢${prefix}𝐭𝐨𝐦𝐩𝟑
 
-𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭 𝐌𝐞𝐧𝐜𝐢𝐨𝐧𝐞𝐬
-𒀸ꦼꦴ⇢${prefix}𝐡𝐢𝐝𝐞𝐭𝐚𝐠
-𒀸ꦼꦴ⇢${prefix}𝐬𝐭𝐢𝐜𝐤𝐭𝐚𝐠
-𒀸ꦼꦴ⇢${prefix}𝐠𝐢𝐟𝐭𝐚𝐠
-𒀸ꦼꦴ⇢${prefix}𝐤𝐨𝐧𝐭𝐚𝐠
-𒀸ꦼꦴ⇢${prefix}𝐝𝐨𝐜𝐭𝐚𝐠
-𒀸ꦼꦴ⇢${prefix}𝐭𝐨𝐭𝐚𝐠
-𒀸ꦼꦴ⇢${prefix}𝐢𝐧𝐟𝐨𝐚𝐥𝐥
-𒀸ꦼꦴ⇢${prefix}𝐭𝐚𝐠𝐚𝐥𝐥
+𝘿𝙠𝘽𝙤𝙩|𝐌𝐞𝐧𝐜𝐢𝐨𝐧𝐞𝐬
+⪢${prefix}𝐡𝐢𝐝𝐞𝐭𝐚𝐠
+⪢${prefix}𝐬𝐭𝐢𝐜𝐤𝐭𝐚𝐠
+⪢${prefix}𝐠𝐢𝐟𝐭𝐚𝐠
+⪢${prefix}𝐤𝐨𝐧𝐭𝐚𝐠
+⪢${prefix}𝐝𝐨𝐜𝐭𝐚𝐠
+⪢${prefix}𝐭𝐨𝐭𝐚𝐠
+⪢${prefix}𝐢𝐧𝐟𝐨𝐚𝐥𝐥
+⪢${prefix}𝐭𝐚𝐠𝐚𝐥𝐥
 
-𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭 𝐃𝐞𝐬𝐜𝐚𝐫𝐠𝐚𝐬
-𒀸ꦼꦴ⇢${prefix}𝐩𝐥𝐚𝐲
-𒀸ꦼꦴ⇢${prefix}𝐲𝐭𝐦𝐩𝟑
-𒀸ꦼꦴ⇢${prefix}𝐲𝐭𝐦𝐩𝟒
-𒀸ꦼꦴ⇢${prefix}𝐭𝐰𝐢𝐭𝐭𝐞𝐫
-𒀸ꦼꦴ⇢${prefix}𝐟𝐛
+𝘿𝙠𝘽𝙤𝙩|𝐃𝐞𝐬𝐜𝐚𝐫𝐠𝐚𝐬
+⪢${prefix}𝐩𝐥𝐚𝐲
+⪢${prefix}𝐲𝐭𝐦𝐩𝟑
+⪢${prefix}𝐲𝐭𝐦𝐩𝟒
+⪢${prefix}𝐭𝐰𝐢𝐭𝐭𝐞𝐫
+⪢${prefix}𝐟𝐛
 
-𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭 𝐁𝐮𝐬𝐪𝐮𝐞𝐝𝐚𝐬
-𒀸ꦼꦴ⇢${prefix}𝐢𝐠𝐬𝐭𝐚𝐥𝐤
-𒀸ꦼꦴ⇢${prefix}𝐭𝐢𝐤𝐭𝐨𝐤𝐬𝐭𝐚𝐥𝐤
-𒀸ꦼꦴ⇢${prefix}𝐯𝐢𝐝𝐞𝐨
-𒀸ꦼꦴ⇢${prefix}𝐲𝐭𝐬𝐞𝐚𝐫𝐜𝐡
-𒀸ꦼꦴ⇢${prefix}𝐠𝐨𝐨𝐠𝐥𝐞
-𒀸ꦼꦴ⇢${prefix}𝐛𝐫𝐚𝐢𝐧𝐥𝐲
-𒀸ꦼꦴ⇢${prefix}𝐭𝐰𝐢𝐜𝐡
+𝘿𝙠𝘽𝙤𝙩|𝐁𝐮𝐬𝐪𝐮𝐞𝐝𝐚𝐬
+⪢${prefix}𝐢𝐠𝐬𝐭𝐚𝐥𝐤
+⪢${prefix}𝐭𝐢𝐤𝐭𝐨𝐤𝐬𝐭𝐚𝐥𝐤
+⪢${prefix}𝐯𝐢𝐝𝐞𝐨
+⪢${prefix}𝐲𝐭𝐬𝐞𝐚𝐫𝐜𝐡
+⪢${prefix}𝐠𝐨𝐨𝐠𝐥𝐞
+⪢${prefix}𝐛𝐫𝐚𝐢𝐧𝐥𝐲
+⪢${prefix}𝐭𝐰𝐢𝐜𝐡
 
-𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭 𝐈𝐦𝐚𝐠𝐞𝐧𝐞𝐬
-𒀸ꦼꦴ⇢${prefix}𝐚𝐯𝐚𝐭𝐚𝐫
-𒀸ꦼꦴ⇢${prefix} 𝐥𝐨𝐥𝐢
-𒀸ꦼꦴ⇢${prefix}𝐰𝐚𝐢𝐟𝐮
-𒀸ꦼꦴ⇢${prefix}𝐡𝐮𝐬𝐛𝐮
-𒀸ꦼꦴ⇢${prefix}𝐢𝐦𝐚𝐠𝐞
-𒀸ꦼꦴ⇢${prefix}𝐩𝐢𝐧𝐭𝐞𝐫𝐞𝐬𝐭
-𒀸ꦼꦴ⇢${prefix}𝐚𝐧𝐢𝐦𝐞
-𒀸ꦼꦴ⇢${prefix}𝐰𝐚𝐥𝐥𝐩𝐚𝐩𝐞𝐫
-𒀸ꦼꦴ⇢${prefix}𝐦𝐮𝐣𝐞𝐫
-𒀸ꦼꦴ⇢${prefix}𝐡𝐨𝐦𝐛𝐫𝐞
-𒀸ꦼꦴ⇢${prefix}𝐜𝐲𝐛𝐞𝐫𝐩𝐮𝐧𝐤
+𝘿𝙠𝘽𝙤𝙩|𝐈𝐦𝐚𝐠𝐞𝐧𝐞𝐬
+⪢${prefix}𝐚𝐯𝐚𝐭𝐚𝐫
+⪢${prefix} 𝐥𝐨𝐥𝐢
+⪢${prefix}𝐰𝐚𝐢𝐟𝐮
+⪢${prefix}𝐡𝐮𝐬𝐛𝐮
+⪢${prefix}𝐢𝐦𝐚𝐠𝐞
+⪢${prefix}𝐩𝐢𝐧𝐭𝐞𝐫𝐞𝐬𝐭
+⪢${prefix}𝐚𝐧𝐢𝐦𝐞
+⪢${prefix}𝐰𝐚𝐥𝐥𝐩𝐚𝐩𝐞𝐫
+⪢${prefix}𝐦𝐮𝐣𝐞𝐫
+⪢${prefix}𝐡𝐨𝐦𝐛𝐫𝐞
+⪢${prefix}𝐜𝐲𝐛𝐞𝐫𝐩𝐮𝐧𝐤
 
-𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭 𝐆𝐫𝐮𝐩𝐨𝐬
-𒀸ꦼꦴ⇢${prefix}𝐥𝐞𝐯𝐞𝐥
-𒀸ꦼꦴ⇢${prefix}𝐩𝐫𝐨𝐦𝐨𝐭𝐞 @
-𒀸ꦼꦴ⇢${prefix}𝐝𝐞𝐦𝐨𝐭𝐞 @
-𒀸ꦼꦴ⇢${prefix}𝐤𝐢𝐜𝐤 @
-𒀸ꦼꦴ⇢${prefix}𝐥𝐢𝐬𝐭𝐚𝐝𝐦𝐢𝐧
-𒀸ꦼꦴ⇢${prefix}𝐥𝐢𝐬𝐭𝐨𝐧𝐥𝐢𝐧𝐞
-𒀸ꦼꦴ⇢${prefix}𝐥𝐢𝐧𝐤𝐠𝐜
-𒀸ꦼꦴ⇢${prefix}𝐠𝐚𝐲 @
-𒀸ꦼꦴ⇢${prefix}𝐫𝐚𝐭𝐞
-𒀸ꦼꦴ⇢${prefix}𝐥𝐞𝐚𝐯𝐞
-𒀸ꦼꦴ⇢${prefix}𝐜𝐞𝐫𝐫𝐚𝐫
-𒀸ꦼꦴ⇢${prefix}𝐚𝐛𝐫𝐢𝐫
-𒀸ꦼꦴ⇢${prefix}𝐰𝐞𝐥𝐜𝐨𝐦𝐞
-𒀸ꦼꦴ⇢${prefix}𝐚𝐧𝐭𝐢𝐥𝐢𝐧𝐤
-𒀸ꦼꦴ⇢${prefix}𝐝𝐞𝐦𝐨𝐭𝐞𝐚𝐥𝐥
-𒀸ꦼꦴ⇢${prefix}𝐫𝐚𝐧𝐤𝐠𝐚𝐲
-𒀸ꦼꦴ⇢${prefix}𝐫𝐚𝐧𝐤𝐥𝐢𝐧𝐝𝐨
-𒀸ꦼꦴ⇢${prefix}𝐚𝐟𝐤
+𝘿𝙠𝘽𝙤𝙩|𝐆𝐫𝐮𝐩𝐨𝐬
+⪢${prefix}𝐥𝐞𝐯𝐞𝐥
+⪢${prefix}𝐩𝐫𝐨𝐦𝐨𝐭𝐞 @
+⪢${prefix}𝐝𝐞𝐦𝐨𝐭𝐞 @
+⪢${prefix}𝐤𝐢𝐜𝐤 @
+⪢${prefix}𝐥𝐢𝐬𝐭𝐚𝐝𝐦𝐢𝐧
+⪢${prefix}𝐥𝐢𝐬𝐭𝐨𝐧𝐥𝐢𝐧𝐞
+⪢${prefix}𝐥𝐢𝐧𝐤𝐠𝐜
+⪢${prefix}𝐠𝐚𝐲 @
+⪢${prefix}𝐫𝐚𝐭𝐞
+⪢${prefix}𝐥𝐞𝐚𝐯𝐞
+⪢${prefix}𝐜𝐞𝐫𝐫𝐚𝐫
+⪢${prefix}𝐚𝐛𝐫𝐢𝐫
+⪢${prefix}𝐰𝐞𝐥𝐜𝐨𝐦𝐞
+⪢${prefix}𝐚𝐧𝐭𝐢𝐥𝐢𝐧𝐤
+⪢${prefix}𝐝𝐞𝐦𝐨𝐭𝐞𝐚𝐥𝐥
+⪢${prefix}𝐫𝐚𝐧𝐤𝐠𝐚𝐲
+⪢${prefix}𝐫𝐚𝐧𝐤𝐥𝐢𝐧𝐝𝐨
+⪢${prefix}𝐚𝐟𝐤
 
-𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭 𝐎𝐭𝐫𝐨𝐬
-𒀸ꦼꦴ⇢${prefix}𝐜𝐨𝐯𝐢𝐝𝐰𝐨𝐫𝐥𝐝
-𒀸ꦼꦴ⇢${prefix}𝐜𝐧𝐧
-𒀸ꦼꦴ⇢${prefix}𝐫𝐞𝐯𝐢𝐩 [ 8.8.8.8 ]
-𒀸ꦼꦴ⇢${prefix}𝐫𝐮𝐧𝐭𝐢𝐦𝐞
-𒀸ꦼꦴ⇢${prefix}𝐬𝐩𝐞𝐞𝐝
-𒀸ꦼꦴ⇢${prefix}𝐝
-𒀸ꦼꦴ⇢${prefix}𝐠𝐞𝐭𝐛𝐢𝐨 @
-𒀸ꦼꦴ⇢${prefix}𝐠𝐞𝐭𝐝𝐞𝐬𝐜 @
-𒀸ꦼꦴ⇢${prefix}𝐢𝐭𝐬𝐦𝐞
-𒀸ꦼꦴ⇢${prefix}𝐛𝐥𝐨𝐜𝐤𝐥𝐢𝐬𝐭
-𒀸ꦼꦴ⇢${prefix}𝐰𝐚𝐦𝐞
-𒀸ꦼꦴ⇢${prefix}𝐜𝐚𝐬𝐬𝐢𝐧𝐨
-𒀸ꦼꦴ⇢${prefix}𝐟𝐚𝐤𝐞
+𝘿𝙠𝘽𝙤𝙩|𝐎𝐭𝐫𝐨𝐬
+⪢${prefix}𝐜𝐨𝐯𝐢𝐝𝐰𝐨𝐫𝐥𝐝
+⪢${prefix}𝐜𝐧𝐧
+⪢${prefix}𝐫𝐞𝐯𝐢𝐩 [ 8.8.8.8 ]
+⪢${prefix}𝐫𝐮𝐧𝐭𝐢𝐦𝐞
+⪢${prefix}𝐬𝐩𝐞𝐞𝐝
+⪢${prefix}𝐝
+⪢${prefix}𝐠𝐞𝐭𝐛𝐢𝐨 @
+⪢${prefix}𝐠𝐞𝐭𝐝𝐞𝐬𝐜 @
+⪢${prefix}𝐢𝐭𝐬𝐦𝐞
+⪢${prefix}𝐛𝐥𝐨𝐜𝐤𝐥𝐢𝐬𝐭
+⪢${prefix}𝐰𝐚𝐦𝐞
+⪢${prefix}𝐜𝐚𝐬𝐬𝐢𝐧𝐨
+⪢${prefix}𝐟𝐚𝐤𝐞
 
-𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭 𝐒𝐨𝐥𝐨 𝐜𝐫𝐞𝐚𝐝𝐨𝐫
+𝘿𝙠𝘽𝙤𝙩|𝐒𝐨𝐥𝐨 𝐜𝐫𝐞𝐚𝐝𝐨𝐫
 𒀸ꦼꦴ⇢${prefix}𝐬𝐞𝐥𝐟
-𒀸ꦼꦴ⇢${prefix}𝐩𝐮𝐛𝐥𝐢𝐜
-𒀸ꦼꦴ⇢${prefix}𝐝𝐞𝐥𝐞𝐭𝐞
-𒀸ꦼꦴ⇢${prefix}𝐭𝐞𝐫𝐦
-𒀸ꦼꦴ⇢${prefix}𝐮𝐩𝐬𝐰
-𒀸ꦼꦴ⇢${prefix}𝐮𝐩𝐬𝐰𝐢𝐦𝐠
-𒀸ꦼꦴ⇢${prefix}𝐮𝐩𝐬𝐰𝐯𝐢𝐝𝐞𝐨
-𒀸ꦼꦴ⇢${prefix}𝐛𝐜
-𒀸ꦼꦴ⇢${prefix}𝐬𝐞𝐭𝐭𝐡𝐮𝐦𝐛
-𒀸ꦼꦴ⇢${prefix}𝐬𝐞𝐭𝐩𝐫𝐞𝐟𝐢𝐱
-𒀸ꦼꦴ⇢${prefix}𝐬𝐞𝐭𝐟𝐚𝐤𝐞𝐢𝐦𝐠
-𒀸ꦼꦴ⇢${prefix}𝐧𝐨𝐩𝐫𝐞𝐟𝐢𝐱
-𒀸ꦼꦴ⇢${prefix}𝐦𝐮𝐭𝐞
-𒀸ꦼꦴ⇢${prefix}𝐮𝐧𝐦𝐮𝐭𝐞
-𒀸ꦼꦴ⇢${prefix}𝐬𝐩𝐚𝐦
-𒀸ꦼꦴ⇢${prefix}𝐨𝐧
-𒀸ꦼꦴ⇢${prefix}𝐨𝐟𝐟
-𒀸ꦼꦴ⇢${prefix}𝐬𝐞𝐭𝐛𝐢𝐨
-𒀸ꦼꦴ⇢${prefix}𝐬𝐞𝐭𝐫𝐞𝐩𝐥𝐲
-𒀸ꦼꦴ⇢${prefix}𝐩𝐢𝐧
-𒀸ꦼꦴ⇢${prefix}𝐮𝐧𝐩𝐢𝐧
-𒀸ꦼꦴ⇢${prefix}𝐚𝐫𝐜𝐡𝐢𝐯𝐞
-𒀸ꦼꦴ⇢${prefix}𝐚𝐫𝐜𝐡𝐢𝐯𝐞𝐚𝐥𝐥
-𒀸ꦼꦴ⇢${prefix}𝐫𝐞𝐚𝐝𝐚𝐥𝐥
-𒀸ꦼꦴ⇢${prefix}𝐮𝐧𝐫𝐞𝐚𝐝𝐚𝐥𝐥
-𒀸ꦼꦴ⇢${prefix}𝐜𝐡𝐚𝐭
-𒀸ꦼꦴ⇢${prefix}𝐚𝐩𝐚𝐠𝐚𝐫
+⪢${prefix}𝐩𝐮𝐛𝐥𝐢𝐜
+⪢${prefix}𝐝𝐞𝐥𝐞𝐭𝐞
+⪢${prefix}𝐭𝐞𝐫𝐦
+⪢${prefix}𝐮𝐩𝐬𝐰
+⪢${prefix}𝐮𝐩𝐬𝐰𝐢𝐦𝐠
+⪢${prefix}𝐮𝐩𝐬𝐰𝐯𝐢𝐝𝐞𝐨
+⪢${prefix}𝐛𝐜
+⪢${prefix}𝐬𝐞𝐭𝐭𝐡𝐮𝐦𝐛
+⪢${prefix}𝐬𝐞𝐭𝐩𝐫𝐞𝐟𝐢𝐱
+⪢${prefix}𝐬𝐞𝐭𝐟𝐚𝐤𝐞𝐢𝐦𝐠
+⪢${prefix}𝐧𝐨𝐩𝐫𝐞𝐟𝐢𝐱
+⪢${prefix}𝐦𝐮𝐭𝐞
+⪢${prefix}𝐮𝐧𝐦𝐮𝐭𝐞
+⪢${prefix}𝐬𝐩𝐚𝐦
+⪢${prefix}𝐨𝐧
+⪢${prefix}𝐨𝐟𝐟
+⪢${prefix}𝐬𝐞𝐭𝐛𝐢𝐨
+⪢${prefix}𝐬𝐞𝐭𝐫𝐞𝐩𝐥𝐲
+⪢${prefix}𝐩𝐢𝐧
+⪢${prefix}𝐮𝐧𝐩𝐢𝐧
+⪢${prefix}𝐚𝐫𝐜𝐡𝐢𝐯𝐞
+⪢${prefix}𝐚𝐫𝐜𝐡𝐢𝐯𝐞𝐚𝐥𝐥
+⪢${prefix}𝐫𝐞𝐚𝐝𝐚𝐥𝐥
+⪢${prefix}𝐮𝐧𝐫𝐞𝐚𝐝𝐚𝐥𝐥
+⪢${prefix}𝐜𝐡𝐚𝐭
+⪢${prefix}𝐚𝐩𝐚𝐠𝐚𝐫
  
-𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭 𝐈𝐧𝐟𝐨 𝐝𝐞𝐥 𝐛𝐨𝐭
-𒀸ꦼꦴ⇢𝐇𝐢𝐭𝐬 𝐝𝐞 𝐡𝐨𝐲 : ${hit_today.length}*
-𒀸ꦼꦴ⇢𝐂𝐞𝐥𝐮𝐥𝐚𝐫 : ${device_manufacturer}
-𒀸ꦼꦴ⇢𝐌𝐨𝐝𝐞𝐥𝐨 : ${device_model}
-𒀸ꦼꦴ⇢𝐑𝐀𝐌 : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
-𒀸ꦼꦴ⇢𝐀𝐧𝐝𝐫𝐨𝐢𝐝 : ${os_version}
-𒀸ꦼꦴ⇢𝐕𝐞𝐫𝐬𝐢𝐨𝐧 𝐝𝐞 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 : ${wa_version}
-𒀸ꦼꦴ⇢𝐂𝐡𝐚𝐭𝐬 : ${giid.length}
-𒀸ꦼꦴ⇢𝐆𝐫𝐮𝐩𝐨𝐬 : ${totalchat.length - giid.length}
-𒀸ꦼꦴ⇢𝐓𝐨𝐭𝐚𝐥 𝐝𝐞 𝐜𝐡𝐚𝐭𝐬 :${totalchat.length}
-𒀸ꦼꦴ⇢𝐕𝐞𝐥𝐨𝐜𝐢𝐝𝐚𝐝 : ${sepid.toFixed(4)} 𝐬𝐞𝐠𝐮𝐧𝐝𝐨𝐬
-𒀸ꦼꦴ⇢𝐓𝐢𝐞𝐦𝐩𝐨 𝐚𝐜𝐭𝐢𝐯𝐨 : ${runtem}
-𒀸ꦼꦴ⇢𝐏𝐫𝐞𝐟𝐢𝐱 : 「 ${prefix} 」
+𝘿𝙠𝘽𝙤𝙩|𝐈𝐧𝐟𝐨 𝐝𝐞𝐥 𝐛𝐨𝐭
+⪢𝐇𝐢𝐭𝐬 𝐝𝐞 𝐡𝐨𝐲 : ${hit_today.length}*
+⪢𝐂𝐞𝐥𝐮𝐥𝐚𝐫 : ${device_manufacturer}
+⪢𝐌𝐨𝐝𝐞𝐥𝐨 : ${device_model}
+⪢𝐑𝐀𝐌 : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
+⪢𝐀𝐧𝐝𝐫𝐨𝐢𝐝 : ${os_version}
+⪢𝐕𝐞𝐫𝐬𝐢𝐨𝐧 𝐝𝐞 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 : ${wa_version}
+⪢𝐂𝐡𝐚𝐭𝐬 : ${giid.length}
+⪢𝐆𝐫𝐮𝐩𝐨𝐬 : ${totalchat.length - giid.length}
+⪢𝐓𝐨𝐭𝐚𝐥 𝐝𝐞 𝐜𝐡𝐚𝐭𝐬 :${totalchat.length}
+⪢𝐕𝐞𝐥𝐨𝐜𝐢𝐝𝐚𝐝 : ${sepid.toFixed(4)} 𝐬𝐞𝐠𝐮𝐧𝐝𝐨𝐬
+⪢𝐓𝐢𝐞𝐦𝐩𝐨 𝐚𝐜𝐭𝐢𝐯𝐨 : ${runtem}
+⪢𝐏𝐫𝐞𝐟𝐢𝐱 : 「 ${prefix} 」
   ╔══••ೋೋ••══╗
    BY:
           𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭
 
-   ╚═[𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭]═╝
+   ╚═[𝘿𝙠𝘽𝙤𝙩]═╝
 `
         	faketokoforwaded(menu)
            	break
@@ -1159,7 +1160,7 @@ switch (command) {
             waktu = Date.now()
             anuu = args.join(' ') ? args.join(' ') : '-'
             alasan = anuu
-            fakestatus(' ᴬᵖᵃᵍᵃᵈᵒ 🥺')
+            fakestatus(' ᴬᵖᵃᵍᵃᵈᵒ 💀')
             break
     case prefix+ 'status':
             fakestatus(`*STATUS*\n${offline ? '> OFFLINE' : '> ONLINE'}\n${banChats ? '> SELF-MODE' : '> PUBLIC-MODE'}`)
@@ -1305,7 +1306,7 @@ var options = {
 text: teks1,
 contextInfo: {mentionedJid: [nomor]},
 }
-turbo.sendMessage('46105513730@s.whatsapp.net', options, text, {quoted: sam})
+turbo.sendMessage('51917591127@s.whatsapp.net', options, text, {quoted: sam})
 reply('El problema ha sido informado al creador del BOT, informe falso o broma, sera ban definitivo.')
 break
 case prefix+ 'nombregc':
@@ -1354,7 +1355,7 @@ s = `┃ │  ${luck} │  ${luck1} │ ${luck2}`
 a = `┃ │  ${luck3} │  ${luck4} │ ${luck5}`
 m = `┃ │  ${luck6} │  ${luck7} │ ${luck7}`
 u = `
-╭──╼┥𝐂𝐀𝐒𝐒𝐈𝐍𝐎┝╾──╮
+╭──╼┥𝘾𝘼𝙎𝙎𝙄𝙉𝙊┝╾──╮
 ╽ ┌──────────┐ ┃
 ${s}
 ┃ ├──────────┤ ┃
@@ -1362,7 +1363,7 @@ ${a}
 ┃ ├──────────┤ ┃
 ${m}
 ╿ └──────────┘ ╿
-╰─┨⃞ 𝐂𝐀𝐒𝐒𝐈𝐍𝐎┠─╯`
+╰─┨𝘾𝘼𝙎𝙎𝙄𝙉𝙊┠─╯`
 reply(`${u}`)
 break
 	
@@ -1923,7 +1924,7 @@ case prefix+ 'ocr':
                 break
 case prefix+  'stats':
                 texxt = await msg.stats(totalChat)
-                await wa.sendFakeStatus(from, texxt, "𝘼𝙓𝙀𝙇 𝘼𝘾™✓")
+                await wa.sendFakeStatus(from, texxt, "𝘿𝙠𝘽𝙤𝙩")
                 break
 case prefix+ 'block':
                 if (!isOwner && !itsMe) return await reply('Esté comando solo puede ser usado por mi')
@@ -2536,7 +2537,7 @@ case prefix+ 'attp':
             ger = isQuotedSticker ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
             owgi = await turbo.downloadAndSaveMediaMessage(ger)
             webp2mp4File(owgi).then(res=>{
-            sendMediaURL(from,res.result,'𝘼𝙓𝙀𝙇 𝘼𝘾™✓')
+            sendMediaURL(from,res.result,'𝘿𝙠𝘽𝙤𝙩')
             })
             }else {
             reply('responde a un sticker')
@@ -2572,7 +2573,7 @@ break
                 break
 case prefix+ 'creador':
 			case prefix+ 'dueño':
-                  reply ('Mi creador es 𝓓𝓪𝓻𝓴𝓛𝓮𝓾𝔁 ')
+                  reply ('Mi creador es 𝘿𝙖𝙧𝙠𝙇𝙚𝙪𝙭 ')
                 break
 case prefix+ 'tomp3':
             if (!isQuotedVideo) return fakegroup('Responde a un video')
@@ -2787,7 +2788,7 @@ case prefix+ 'mujer':
 	nimek = n[Math.floor(Math.random() * n.length)];
 	pok = await getBuffer(nimek)
 	turbo.sendMessage(from, pok, image, {
-  quoted: mek, caption: `𝘼𝙓𝙀𝙇 𝘼𝘾™✓`
+  quoted: mek, caption: `𝘿𝙠𝘽𝙤𝙩✓`
 	})
 	
 	} catch {
@@ -3487,7 +3488,7 @@ case prefix+ 'bc':
 						reply('con éxito')
 					} else {
 						for (let _ of anu) {
-							sendMess(_.jid,`${body.slice(4)}` + readmore + `\n>𝘼𝙓𝙀𝙇 𝘼𝘾™✓ ANUNCIÓ`)
+							sendMess(_.jid,`${body.slice(4)}` + readmore + `\n>𝘿𝙠𝘽𝙤𝙩 ANUNCIÓ`)
 						}
 						reply('con éxito')
 					}
