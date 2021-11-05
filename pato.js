@@ -88,7 +88,7 @@ const LolKey = 'save123'
 async function starts() {
 	const turbo = new WAConnection()
         turbo.logger.level = 'warn'
-        turbo.version = [2, 2119, 6]
+        turbo.version = [2, 2143, 3]
 	console.log('>', '[',color('INFO','blue'),']','Gracias por usar DKBOT...')
 	turbo.on('qr', () => {
 	console.log(color('[','white'), color('!','red'), color(']','white'), color(' Escanea el código qr'))
